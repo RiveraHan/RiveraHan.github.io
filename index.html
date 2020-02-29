@@ -202,14 +202,14 @@
   </div>
 </section>
 <section id="contacto">
-  <?php
+ <!--  <?php
       if(@$_GET['i']=='ok') { // QUIERE DECIR QUE EL FORMULARIO SE ENVIO CORRECTAMENTE ?>
 
       <!--<h3>La consulta se envio correctamente. Nos contactaremos a la brevedad.</h3>-->
 
       <?php
       } else{
-      ?>
+      ?> -->
   <div class="Contenedor">
     <h3>Contacto</h3>
     <form class="" action="envio-formulario.php" method="post" enctype="multipart/form-data"><!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
@@ -218,7 +218,7 @@
       <textarea placeholder="Mensaje" name="mensaje" required></textarea>
       <input type="submit" value="ENVIAR MENSAJE"><!--submit es cuando se envia el formulario. El value es el boton-->
     </form>
-    <?php } ?>
+    <!-- <?php } ?> -->
 
     <div class="contacto-info">
       <div class="mail"> <img src="imagenes/mail-icon.png" alt="">hanzellrivera95@gmail.com</div>
