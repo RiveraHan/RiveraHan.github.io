@@ -1,0 +1,459 @@
+body{
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+header .Contenedor {
+  display: flex; /*Convertir en cajas flexibles*/
+  justify-content: space-between;/*Justificar los contenidos a los costados*/
+}
+
+header ul {
+  display: flex;/*Que los elementos sean más flexibles*/
+}
+
+header ul li {
+  list-style: none;/*Eliminar cualquier estilo*/
+    margin-right: 40px;
+    margin-top: 9px;
+
+}
+
+a {
+  text-decoration: none;
+}
+.Contenedor {
+  max-width: 1280px;/*Un ancho por defecto*/
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(rgba(84, 93, 220, .8), rgba(96,171,245,.8)), url(../imagenes/fondo.jpg);/*../ para regresar a lacarpeta raiz o anterior. En color html para buscar el código del degradado; el .7 es la transparencia de fondo*/
+  height: 100vh;/*100% del alto de la ventana. También sirve para dispositivos moviles*/
+  background-size: cover; /*Adacta la imagen al ancho de la página*/
+}
+
+#Contenedor-titulo-flex {
+  display: flex;
+  justify-content: center;
+  margin: 18vh 0;/*El 18vh es para que baje el 18% de la ventana y este corresponde al margin-top y margin-bottom. el 0 corresponde al margin-right y al margin-left*/
+  /*margin-top: 18vh;
+  margin-right: 0px;
+  margin-bottom: 18vh;
+  margin-left: 0px;*/
+  max-width: 1580px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin: 0px;
+}
+h2 {
+  font-size: 25px;
+  color: #fff;
+}
+.Contenedor-titulo {
+  text-align: center;/*Alinee el text al centro*/
+}
+.Contenedor-titulo a, #sobre-mi a, #blog a,#que-esperas a, #contacto input[type="submit"]{/*Todas las propiedades o secciones las aplique en ambos, que tome las propiedadesen el otro botton*/
+  font-size: 14px;
+  color: #fff;
+  background: #5cb8ff;
+  padding: 14px 24px;/*Es el espaciado interno del elementos, aumentamentos sus espacios. los elementos a son elementos en línea y no son manípulables, a menos que se le aplique el display: inline-block;*/
+  /*padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom:  14px;
+  padding-left: 24px;*/
+  width: 143px;
+  display: inline-block;/*Para poder manipular elementos en linea como a*/
+}
+p.logo {/*LLamar al elemeno p que tenga la clase logo*/
+  color: #fff;
+  font-size: 20px;
+}
+nav ul li a {
+  color: #fff;
+}
+
+/*seccion sobremi*/
+
+h3{
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;/*Peso d la fuente*/
+}
+#sobre-mi .Contenedor-sobremi {
+  display: flex;
+  justify-content: space-around;/*Separar los div*/
+}
+
+#sobre-mi .texto {
+  width: 42%;/*El 42% es para trabajar lo en dispositivos moviles*/
+
+}
+
+.Contenedor-servicios {
+  display: flex;
+  justify-content: space-around;/*Separa los contenidos,  cajas o div*/
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.servicios {
+  width: 24%;
+  padding: 34px 30px 38px 30px; /*Aumentar el tamaño interno*/
+  /*padding-top: 34px;
+  padding-right: 30px;
+  padding-bottom: 38px;
+  padding-left: 30px;*/
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;/*como  base del elemeno que se va a posicionar relativamente*/
+
+}
+
+.servicios h4 {
+  font-size: 30px;
+  margin: 0;
+}
+.servicios p {
+  margin-bottom: 20px;
+  height: 194px;
+}
+.Contenedor-servicios .violeta{/*llamada a los contenedores violestas que esten en .contedor-servicios*/
+  background:
+  linear-gradient(to top, #5055df, #6d68f3);/*to top, para que el gradado valla de abajo hacia arriba herramientas: www.colorzila.com*/
+  box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);/*box-shadow,la sombra del div. herramiento: www.cssmatic.com*/
+}
+.Contenedor-servicios .celeste {
+  background:
+  linear-gradient(to top, #40a8f9, #5cb8ff);
+  box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.icono {
+  float: right;/*Separar ell contenido a la derecha*/
+}
+
+/*Secccion mis Trabajos*/
+button.owl-prev, button.owl-next{
+    font-size: 45px !important;
+}
+span {
+    color: #61b7fa;
+}
+#mis-trabajos p {
+  text-align: center;
+  color: #000;
+}
+
+/*Seccion por que trabjar conmigo*/
+
+.contenedor-trabajar {
+  display: flex;
+  flex-wrap: wrap;/*detecta que si los elementos ocupan mucho lugar bajan a otra linea*/
+  justify-content: space-around;
+}
+
+#por-que-trabajar .item {
+  width: 28%;
+  text-align: center;
+}
+#por-que-trabajar ul li {
+  list-style: none;
+}
+#por-que-trabajar ul li:nth-child(2) {/*LLammando al elemento hijo numero 2 el ul es el padre y loos li son los hijos el 2 */
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+#por-que-trabajar ul li:nth-child(3) {
+  line-height: 31px;/*Alto de linea*/
+}
+
+/*Seccion blog*/
+#blog {
+  background: #F9FAFC;
+}
+
+#blog .contenedor-publicaciones{
+
+  display: flex;
+  justify-content: space-around;
+}
+
+#blog .publicacion {
+  width: 30%;
+  box-shadow: 1px 1px 14px #ccc;/*puedes conseguirlo desde boxshadow generator*/
+}
+#blog img {
+    width: 100%;
+    /* height: 100%; */
+}
+#blog .contenido {
+  background: #fff;
+  padding: 20px;
+}
+#blog h4 {
+  font-size: 23px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+#blog p {
+  color: #5A6169;
+  line-height: 24px;
+  font-size: 16px;
+}
+ #blog a {
+   width: 80px;
+ }
+
+ /*Seccion que esperas*/
+ #que-esperas {
+   background: linear-gradient(rgba(84,93,220,.94), rgba(96,171,245,.7));
+   text-align: center;
+   padding: 50px 0;
+   margin-top: 40px;
+ }
+
+ #que-esperas h3 {
+   font-size: 23px;
+   color: #fff;
+ }
+
+ /*seccion de contacto*/
+
+ #contacto form {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 77%;
+   margin: auto;
+ }
+
+ input[type="text"], input[type="email"] {/*forma de llamar a los input*/
+   width: 49%;
+   margin-bottom:15px;
+   padding: 18px 0;
+   border: 0;
+   border-bottom: 1px solid #5cb8ff; /*El 1px es el grosor del border de abajo*/
+   font-size: 17px;
+ }
+textarea {
+  width: 100%;
+  border: 0;
+  padding: 18px 0;
+  border-bottom: 1px solid #5cb8ff; /*El 1px es el grosor del border de abajo*/
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+#contacto input[type="submit"] {
+  width: 170px;
+  margin: auto;
+  /*border: 0;*/
+}
+
+.contacto-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.contacto-info img {
+  width: 28px;
+  vertical-align: middle;/*Alinear la imagen con el texto, centrarlo */
+  margin-right: 10px;
+}
+
+footer {
+  background: #2F2F2F;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .Contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer img {
+  margin: 0 40px;
+  transform: rotate(0);
+  transition: 0.4s;
+}
+
+footer img:hover {
+  transform: rotate(360deg);
+  transition: 0.4s;
+}
+
+footer p {
+  color: #fff;
+  margin-top: 40px;
+
+}
+
+#whatsapp {
+  position: fixed;/*Todo esto para poner un elemento fijo en la pantalla*/
+  top: 80%;
+  right:  1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto {
+  padding: 80px 0;
+}
+#servicios {
+  padding: 10px 0;
+}
+
+.menu-icon {
+  display: none;/*Es para Eliminar un elemento  de  la pagina*/
+}
+@media (max-width: 800px) {/*Esto es para especificar en que dispositivo se verá está página, 800px aplicatanto para tablets y telefonos, 480px estandar para celulares*/
+  .menu-icon {
+    display: block;/*Lo contrario de none*/
+    float: right;
+    display: block;
+    float: right;
+    width: 40px;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    height: 268px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+  }
+
+  header nav ul {
+    flex-direction: column;/*A los elementos que se le dieron display flex se ponen uno abajo del otro */
+  }
+
+  header nav ul li {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 19px;
+  }
+
+  #sobre-mi .Contenedor-sobremi {
+    flex-direction: column;
+  }
+
+  #sobre-mi img {
+    width: 100%;
+  }
+
+  #sobre-mi .texto {
+    width: 100%;
+  }
+
+.servicios p {
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.Contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+    flex-direction: column;
+}
+
+.servicios {
+  width: 82%;
+  padding: 34px 30px 69px 30px;
+}
+.icono {
+    float: right;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 43px;
+}
+.contenedor-trabajar {
+    flex-direction: column;
+}
+#por-que-trabajar .item {
+    width: 100%;
+}
+.item ul {
+    padding: 0;
+}
+#blog .contenedor-publicaciones {
+    flex-direction: column;
+}
+#blog .publicacion {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#contacto form {
+    width: 100%;
+    flex-direction: column;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+footer img {
+    margin: 0 26px;
+}
+#whatsapp {
+    z-index: 10;
+}
+/*#mis-trabajos, #sobre-mi, #por-que-trabajar, #blog, #contacto {
+    padding: 0px 0;
+}*/
+}
+
+@media (min-width: 600px) and (max-width: 800px) {/*600px no aplica en celulares, solo para tablet*/
+  header {
+    height: 70vh;
+  }
+
+  .servicios {
+    width: 57%;
+    padding: 34px 30px 69px 30px;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+#blog .publicacion {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+}
