@@ -1,4 +1,8 @@
-owl
+# owl
+/owl
 
-
+# jQuery
 js/jquery.js
+
+# System Files
+.DS_Store
