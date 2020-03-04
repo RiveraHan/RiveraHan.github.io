@@ -3,17 +3,29 @@
   <head><!--Cabezera-->
     <link rel="stylesheet" href="estilos/estilos.css"><!--Conectar a  la hoja de estilos css-->
     <meta charset="utf-8"><!--Tipo de codificación del lenguaje-->
-    <title>HANZELL RIVERA | Página de Hanzell Web</title>
+    <!--viewport es la pantalla del celular, va a estar adactado al ancho del dispositivo, y el usuario no  podra hacer zoom-->
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+
+    <title>HANZELL RIVERA | Página Web de Hanzell Rivera</title>
 
     <!-- tipos de letras -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+
     <!-- carousel -->
     <link rel="stylesheet" href="owl/owl.carousel.min.css"> 
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <script type="text/javascript" src="owl/owl.carousel.min.js"></script><!--To download and install the owl carousel 2 libraries https://owlcarousel2.github.io-->
+  
 
-<!--viewport es la pantalla del celular, va a estar adactado al ancho del dispositivo, y el usuario no  podra hacer zoom-->
-<meta name="viewport" content="width=device-width,user-scalable=no">
+    <!-- Menu -->
+    <script type="text/javascript" src="js/menu.js"></script>
+
+    <!-- carousel -->
+    <script type="text/javascript" src="js/carousel.js"></script>
+
 <style>
 #actualizar {
 
@@ -27,7 +39,7 @@
 
     <!-- API de whatsapp -->
     <a id="whatsapp"
-    href="https://api.whatsapp.com/send?phone=50587146772"> <img src="imagenes/whatsapp.png" alt=""></a>
+    href="https://api.whatsapp.com/send?phone=50587146772"> <img src="imagenes/whatsapp.png" alt="contacto-whatssap-hanzell"></a>
 
     <!--Encabezado-->
     <header>
@@ -67,7 +79,7 @@
       <div class="texto">
         <p>Mi nombre es Hanzell Rivera y soy desarrollador de aplicaciones web.</p>
         <p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, JavaScript, jQuery, Angular, Nodejs, MongoDB, Wordpress. Si necesitás una página web moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que llegaste al lugar correcto.</p>
-        <p>Podes ponerte en contacto conmigo a través de Facebook, Linkedin o completando el formulario de contacto que se encuentra al final de mi sitio web.</p>
+        <p>Puedes contactar conmigo a través de mis redes sociales como Facebook, Linkedin e Instagram o completando el formulario de contacto que se encuentra al final de mi sitio web.</p>
         <a href="#mis-trabajos">VER MIS TRABAJOS</a>
       </div>
     </div>
@@ -80,7 +92,7 @@
     <h3>Servicios</h3>
     <div class="Contenedor-servicios">
       <div class="servicios violeta">
-        <h4>Funcion Web</h4>
+        <h4>función en Web</h4>
         <p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia</p>
         <img class="icono" src="imagenes/monitor.png">
         <img class="ondas" src="imagenes/waves.png">
@@ -131,13 +143,12 @@
   <div class="Contenedor"><!--libreria owl carousel 2-->
     <h3>Mis Trabajos</h3>
     <div class="owl-carousel owl-theme">
-    <div class="item"><a href=""><img src="imagenes/sassy.jpg"></a></div>
-    <div class="item"><a href=""><img src="imagenes/chaia.jpg"></a></div>
-    <div class="item"><a href=""><img src="imagenes/alimentar.jpg"></a></div>
-    <div class="item"><a href=""><img src="imagenes/sassy.jpg"></a></div>
-    <div class="item"><a href=""><img src="imagenes/alimentar.jpg"></a></div>
-    <div class="item"><a href=""><img src="imagenes/sassy.jpg"></a></div>
-    <div class="item"><a href=""><img src="imagenes/chaia.jpg"></a></div>
+      <div class="item"><a href=""><img src="imagenes/proyecto.jpg"></a></div>
+    <div class="item"><a href=""><img src="imagenes/proyecto2.jpg"></a></div>
+    <div class="item"><a href=""><img src="imagenes/proyecto3.jpg"></a></div>
+    <div class="item"><a href=""><img src="imagenes/proyecto.jpg"></a></div>
+    <div class="item"><a href=""><img src="imagenes/proyecto2.jpg"></a></div>
+    <div class="item"><a href=""><img src="imagenes/proyecto3.jpg"></a></div>
 
 </div>
 
@@ -207,9 +218,9 @@
 
       <!--<h3>La consulta se envio correctamente. Nos contactaremos a la brevedad.</h3>-->
 
-      <?php
+      <!-- <?php
       } else{
-      ?>
+      ?> -->
   <div class="Contenedor">
     <h3>Contacto</h3>
     <form class="" action="envio-formulario.php" method="post" enctype="multipart/form-data"><!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
@@ -221,8 +232,8 @@
     <!-- <?php } ?> -->
 
     <div class="contacto-info">
-      <div class="mail"> <img src="imagenes/mail-icon.png" alt="">hanzellrivera95@gmail.com</div>
-      <div class="whatssap"> <img src="imagenes/whatsapp-icon.png" alt="">50587146772</div>
+      <div class="mail"> <img src="imagenes/mail-icon.png" alt="contacto-correo-hanzell">hanzellrivera95@gmail.com</div>
+      <div class="whatssap"> <img src="imagenes/whatsapp-icon.png" alt="contacto-numero-hanzell">50587146772</div>
     </div>
 
   </div>
@@ -236,7 +247,7 @@
       <div class="Contenedor">
         <div class="redes">
           <a href="https://www.facebook.com/hanzellerivera/"> <img src="imagenes/facebook.png" alt="imagen-facebook"> </a>
-          <a href="https://www.instagram.com/hanzellriverap/"> <img src="imagenes/instagram.png" alt="imagen-medium"> <title>https://www.flaticon.es/autores/pixel-perfect</title> </a>
+          <a href="https://www.instagram.com/hanzellriverap/"> <img src="imagenes/instagram.png" alt="imagen-instagram"> <title>https://www.flaticon.es/autores/pixel-perfect</title> </a>
           <a href="https://github.com/RiveraHan"> <img src="imagenes/github.png" alt="imagen-github"> </a>
           <a href="https://www.linkedin.com/in/hanzell-rivera-027539175/"> <img src="imagenes/linkedin.png" alt="imagen-linkedin"> </a>
         </div>
@@ -246,61 +257,5 @@
       </div>
 
     </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script src="owl/owl.carousel.min.js"></script><!--Para descargar e instalar las librerias de owl carousel 2 https://owlcarousel2.github.io-->
-    <script>
-    $('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  dots:false,
-  responsive:{
-      0:{//para mostrar en telefono
-          items:1
-      },
-      600:{//para mostrar en tablet
-          items:3
-      },
-      1000:{//para mostrar en escritorio
-          items:4
-      }
-  }
-})
-    </script>
-    <script>
-
-    $(document).ready(function(){
-
-      $(window).scroll(function(){
-        scroll = $(window).scrollTop();
-        if (scroll > 100) {
-          $('.menu').css({"position":"fixed"});
-          $('.menu').css({"width":"100%"});
-          $('.menu').css({"top":"0"});
-          $('.menu').css({"background":"#fff"});
-          $('.menu a').css({"color":"#000"});
-          $('.logo').css({"color":"#000"});
-          $('.menu').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
-          $('.menu').css({"z-index":"10"});/*Va encima de cualquier elemento*/
-          // $('.menu nav ul li').css({"background":"#5cb8ff"});
-        } else {
-          $('.menu').css({"position":"relative"});/*Posicion por defecto*/
-          $('.menu').css({"background":"transparent"});
-          $('.menu').css({"box-shadow":"0 0 0"});
-          $('.menu a').css({"color":"#fff"});
-          $('.logo').css({"color":"#fff"});
-        }
-      })
-
-      $('.menu-icon').click(function(){
-        $('header nav').slideToggle();/*El combina el alideDown y slideUP*/
-      })
-
-    })
-
-    </script>
   </body>
 </html>
