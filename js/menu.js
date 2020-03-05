@@ -28,7 +28,7 @@ $(document).ready(function(){
         }
 
         // When you slide more than 100vh in mobile mode and validate that the screen sizes where the app is being used are mobile, it will execute the event that hides the nav or menu header
-        if((scroll > 100 && screen.width <= 768  && screen.height <= 1024) && (screen.width >= 320 && screen.height >= 568)) {
+        if((scroll > 100 && screen.width <= 768  && screen.height <= 1024) && (screen.width >= 320 && screen.height >= 511)) {
             
             header_nav.slideUp();
         }
