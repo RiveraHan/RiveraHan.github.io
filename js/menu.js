@@ -37,6 +37,7 @@ $(document).ready(function(){
     /* The menu in responsive mode must be displayed and picked up with the slideToggle event */
     $('.menu-icon').click(() => {
       header_nav.slideToggle();
+      header_nav.css({"z-index":"10"}); // You must be on top of the photo-profile in the header so you don't see the photo on top of the menu in mobile mode
     });
 
     $('nav ul li').click(() => {
