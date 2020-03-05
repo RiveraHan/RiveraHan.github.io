@@ -445,7 +445,7 @@ footer img {
 
 @media (min-width: 600px) and (max-width: 800px) {/*600px no aplica en celulares, solo para tablet*/
   header {
-    height: 70vh;
+    height: 100vh;
   }
 
   .servicios {
