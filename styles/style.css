@@ -29,7 +29,7 @@ a {
 }
 
 header {
-  background: linear-gradient(rgba(84, 93, 220, .8), rgba(96,171,245,.8)), url(../imagenes/portada.jpg);/*../ para regresar a lacarpeta raiz o anterior. En color html para buscar el código del degradado; el .7 es la transparencia de fondo*/
+  background: linear-gradient(rgba(84, 93, 220, .8), rgba(96,171,245,.8)), url(../img/portada.jpg);/*../ para regresar a lacarpeta raiz o anterior. En color html para buscar el código del degradado; el .7 es la transparencia de fondo*/
   height: 100vh;/*100% del alto de la ventana. También sirve para dispositivos moviles*/
   background-size: cover; /*Adacta la imagen al ancho de la página*/
 }

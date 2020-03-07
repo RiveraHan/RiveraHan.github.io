@@ -30,20 +30,20 @@ $(document).ready(function(){
         // When you slide more than 100vh in mobile mode and validate that the screen sizes where the app is being used are mobile, it will execute the event that hides the nav or menu header
         let ancho_pantalla = screen.width, alto_pantalla = screen.height;
         
-        if((scroll > 100 && ancho_pantalla <= 768  && alto_pantalla <= 1024) && (ancho_pantalla >= 320 && alto_pantalla >= 511)) {
+        if((scroll > 100 && (ancho_pantalla <= 768  && alto_pantalla <= 1024)) && (ancho_pantalla >= 320 && alto_pantalla >= 511)) {
             
             header_nav.slideUp();
+            $('nav ul li').click(() => {
+                header_nav.slideUp();
+            });
         }
+        
     });
-
+    
     /* The menu in responsive mode must be displayed and picked up with the slideToggle event */
     $('.menu-icon').click(() => {
       header_nav.slideToggle();
       header_nav.css({"z-index":"10"}); // You must be on top of the photo-profile in the header so you don't see the photo on top of the menu in mobile mode
-    });
-
-    $('nav ul li').click(() => {
-        header_nav.slideUp();
     });
 
   });
