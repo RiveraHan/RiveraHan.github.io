@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
     <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script>
 
     <!-- carousel -->
     <link rel="stylesheet" href="lib/owl.carousel.min.css"> 
@@ -39,6 +39,9 @@
 #foto-perfil {
   border-radius: 80px;
   filter: drop-shadow(5px 5px 15px #444);
+}
+.item img {
+  filter: drop-shadow(3px 3px 3px #444);
 }
 </style>
   </head>
@@ -99,7 +102,7 @@
   <div class="Contenedor">
     <h3>Servicios</h3>
     <div class="Contenedor-servicios">
-      <div class="servicios violeta">
+      <div class="servicios amarillo">
         <h4>Función de la Web</h4>
         <p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web, deben ser rápidos para que el visitante tenga la mejor experiencia</p>
         <img class="icono" src="img/monitor.png">
@@ -113,7 +116,7 @@
         <img class="ondas" src="img/waves.png">
 
       </div>
-      <div class="servicios violeta">
+      <div class="servicios amarillo">
         <h4>SEO</h4>
         <p>Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que tu sitio tenga una clasificación más alta en los resultados de Google y asi generar mas tráfico a la web</p>
         <img class="icono" src="img/seo.png">
@@ -127,7 +130,7 @@
         <img class="ondas" src="img/waves.png">
 
       </div>
-      <div class="servicios violeta">
+      <div class="servicios amarillo">
         <h4>Mantenimiento</h4>
         <p>Podés contactarme si necesitas actualizar tu página web, agregar nuevas secciones o cualquier cambio que necesites. Esto es perfecto para los sitios web de pequeñas empresas, donde no se necesita un diseñador de páginas web a tiempo completo, sino solo en distintas ocasiones</p>
         <img class="icono" src="img/mante.png">
@@ -167,21 +170,21 @@
   <div class="Contenedor">
     <h3>¿Por qué trabajar conmigo?</h3>
     <div class="contenedor-trabajar">
-      <div class="item">
+      <div class="items">
         <ul>
           <li><img src="img/velocidad.png"></li>
           <li>Velocidad</li>
           <li>Me aseguro de que tu web cargue entre 2 y 4 segundos (depende de la cantidad de contenido del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar más</li>
         </ul>
       </div>
-      <div class="item">
+      <div class="items">
         <ul>
           <li><img src="img/mantenimiento.png"></li>
           <li>Mantenimiento</li>
           <li>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenido mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web</li>
         </ul>
       </div>
-      <div class="item">
+      <div class="items">
         <ul>
           <li><img src="img/mobile2.png"></li>
           <li>Mobile Priority</li>
@@ -224,7 +227,7 @@
 
   <div class="Contenedor">
     <h3>Contacto</h3>
-    <form action="php/contact.php" method="POST" enctype="multipart/form-data"><!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
+    <form action="" method="POST" enctype="multipart/form-data"><!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
       <input type="text" placeholder="Nombre" name="name" pattern=[A-Z\sa-z]{3,20} required><!--php llama lo que este en el atributo name-->
       <input type="email" placeholder="Email" name="email" required>
       <textarea placeholder="Mensaje" name="message" required></textarea>
