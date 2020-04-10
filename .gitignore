@@ -1,8 +1,8 @@
 # owl
-# /lib
+# /assets
 
 # jQuery
 # js/jquery.js
 
 # System Files
-# .DS_Store
+.DS_Store

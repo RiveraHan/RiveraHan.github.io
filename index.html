@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
     <!-- jQuery -->
-    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="assets/jquery.js"></script>
 
     <!-- carousel -->
-    <link rel="stylesheet" href="lib/owl.carousel.min.css"> 
-    <link rel="stylesheet" href="lib/owl.theme.default.min.css">
-    <script type="text/javascript" src="lib/owl.carousel.min.js"></script><!--To download and install the owl carousel 2 libraries https://owlcarousel2.github.io-->
+    <link rel="stylesheet" href="assets/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="assets/owl.theme.default.min.css">
+    <script type="text/javascript" src="assets/owl.carousel.min.js"></script><!--To download and install the owl carousel 2 libraries https://owlcarousel2.github.io-->
   
 
     <!-- Menu -->
@@ -25,6 +25,9 @@
 
     <!-- carousel -->
     <script type="text/javascript" src="js/carousel.js"></script>
+
+    <!-- Form contact -->
+    <script type="text/javascript" src="js/contact.js"></script>
 
 <style>
 #actualizar {
@@ -224,16 +227,19 @@
   </div>
 </section>
 <section id="contacto">
-
+  
   <div class="Contenedor">
-    <h3>Contacto</h3>
-    <form action="" method="POST" enctype="multipart/form-data"><!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
-      <input type="text" placeholder="Nombre" name="name" pattern=[A-Z\sa-z]{3,20} required><!--php llama lo que este en el atributo name-->
-      <input type="email" placeholder="Email" name="email" required>
-      <textarea placeholder="Mensaje" name="message" required></textarea>
+    <h3 class="hide">Contacto</h3>
+    <form action="" id="formulario" method="POST" enctype="multipart/form-data"><!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
+      <input id="name" type="text" placeholder="Nombre" name="name" pattern=[A-Z\sa-z]{3,20} required><!--php llama lo que este en el atributo name-->
+      <input id="email" type="email" placeholder="Email" name="email" required>
+      <textarea id="message" placeholder="Mensaje" name="message" required></textarea>
       <input type="submit" value="ENVIAR">
     </form>
-
+    
+    <div id="form">
+    </div>
+    
     <div class="contacto-info">
       <div class="mail"> <img src="img/mail-icon.png" alt="contacto-correo-hanzell">hanzellrivera95@gmail.com</div>
       <div class="whatssap"> <img src="img/whatsapp-icon.png" alt="contacto-numero-hanzell">50587146772</div>
