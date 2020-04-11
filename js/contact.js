@@ -52,8 +52,15 @@ window.addEventListener('load', () => {
         form.style.fontWeight = 'bold';
 
         h1.innerHTML = "";
-
+        
     } else {
+        if(form_name == '' || form_email == '')
+        window.location.href = "file:///opt/lampp/htdocs/Proyectos_www/RiveraHan.github.io/index.html#contacto";
         alert('Los datos del formulario no pueden ser enviados, verifique que esta ingresando los datos correctamente');
+
+        localStorage.removeItem('name');
+        localStorage.removeItem('email');
     }
+
+    console.log(window.location);
 });
