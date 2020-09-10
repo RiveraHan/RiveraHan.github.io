@@ -35,12 +35,13 @@ a {
 }
 
 header {
-    background: linear-gradient(rgba(84, 93, 220, .8), rgba(96, 171, 245, .8)), url(../img/portada.jpg);
+    background: linear-gradient(rgba(84, 93, 220, .6), rgba(96, 171, 245, .8)), url(../img/fondo.jpg);
     /*../ para regresar a lacarpeta raiz o anterior. En color html para buscar el código del degradado; el .7 es la transparencia de fondo*/
     height: 100vh;
     /*100% del alto de la ventana. También sirve para dispositivos moviles*/
     background-size: cover;
     /*Adacta la imagen al ancho de la página*/
+    background-position: right;
 }
 
 #Contenedor-titulo-flex {
@@ -89,6 +90,7 @@ h2 {
   padding-left: 24px;*/
     width: 143px;
     display: inline-block;
+    border-radius: 5px;
     /*Para poder manipular elementos en linea como a*/
 }
 
