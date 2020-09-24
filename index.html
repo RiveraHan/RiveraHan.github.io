@@ -1,43 +1,31 @@
 <!DOCTYPE html>
-<!--El tipo de documento-->
 <html lang="es">
-<!-- El lenguaje de la página-->
 
 <head>
-    <!--Cabezera-->
-    <link rel="stylesheet" href="styles/style.css">
-    <!--Conectar a  la hoja de estilos css-->
-    <meta charset="utf-8">
-    <!--Tipo de codificación del lenguaje-->
-    <!--viewport es la pantalla del celular, va a estar adactado al ancho del dispositivo, y el usuario no  podra hacer zoom-->
-    <meta name="viewport" content="width=device-width,user-scalable=no">
-
     <title>HANZELL RIVERA | Página Web de Hanzell Rivera</title>
 
-    <!-- tipos de letras -->
+    <link rel="stylesheet" href="src/assets/styles/style.css">
+    <meta charset="utf-8">
+    <meta name="description" content="La página web de Hanzell Rivera, Hanzell Rivera desarrollardor web muestra información de sus servicios como desarrollador web y de las tecnologías que domina. The website from Hanzell Rivera">
+    <meta name="author" content="Hanzell Rivera">
+    <meta name="keywords" content="sitio web de Hanzell Rivera, pagina de Hanzell rivera, Hanzell Rivera sitio web, riverahan, RiveraHan, el sitio de hanzell, la web de hanzell, la web de hanzell rivera, web hanzell rivera, hanzell web, hanzell rivera pagina, pagina hanzell">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-
     <!-- jQuery -->
-    <script type="text/javascript" src="assets/jquery.js"></script>
-
+    <script type="text/javascript" src="src/assets/lib/jquery.js"></script>
     <!-- carousel -->
-    <link rel="stylesheet" href="assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owl.theme.default.min.css">
-    <script type="text/javascript" src="assets/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="src/assets/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/assets/lib/owl.theme.default.min.css">
+    <script type="text/javascript" src="src/assets/lib/owl.carousel.min.js"></script>
     <!--To download and install the owl carousel 2 libraries https://owlcarousel2.github.io-->
-
-
     <!-- Menu -->
-    <script type="text/javascript" src="js/menu.js"></script>
-
+    <script type="text/javascript" src="src/js/menu.js"></script>
     <!-- carousel -->
-    <script type="text/javascript" src="js/carousel.js"></script>
-
+    <script type="text/javascript" src="src/js/carousel.js"></script>
     <!-- Form contact -->
-    <script type="text/javascript" src="js/contact.js"></script>
-
-    <!-- Helpers -->
-    <script type="text/javascript" src="js/middlewares/anio.js"></script>
+    <script type="text/javascript" src="src/js/contact.js"></script>
+    <!-- middlewares -->
+    <script type="text/javascript" src="src/middlewares/anio.js"></script>
 
     <style>
         #actualizar {
@@ -70,21 +58,15 @@
 </head>
 
 <body>
-
-    <!-- API de whatsapp -->
-    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=50587146772"> <img src="img/whatsapp.png" alt="contacto-whatssap-hanzell"></a>
-
-    <!--Encabezado-->
+    <!-- API whatsapp -->
+    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=50587146772"> <img src="src/assets/img/whatsapp.png" alt="contacto-whatssap-hanzell"></a>
     <header>
         <div class="menu">
-            <!--Contenedor puede tener clases y id-->
             <div class="Contenedor">
-                <p class="logo"> <a id="actualizar" href="https://riverahan.github.io/">HANZELL RIVERA</a></p>
-                <img class="menu-icon" src="img/menu.png" alt="">
+                <p class="logo"><a id="actualizar" href="https://riverahan.github.io">HANZELL RIVERA</a></p>
+                <img class="menu-icon" src="src/assets/img/menu.png" alt="">
                 <nav>
-                    <!--Todo menu debe de ir un nav-->
                     <ul>
-                        <!--Lista sin ordenar-->
                         <li><a href="#sobre-mi">Sobre mí</a></li>
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#mis-trabajos">Mis Trabajos</a></li>
@@ -100,30 +82,26 @@
         <div class="Contenedor" id="Contenedor-titulo-flex">
             <div class="Contenedor-titulo">
                 <h1>Hanzell Rivera</h1>
-                <!--Titular principal de la pagina, solo debe a ver uno en la página-->
                 <h2>Desarrollador de Aplicaciones Web</h2>
-                <img id="foto-perfil" src="img/perfil-hanzell.jpg" alt="foto-perfil" title="Hanzell Rivera"><br><br>
+                <img id="foto-perfil" src="src/assets/img/perfil-hanzell.jpg" alt="foto-perfil" title="Hanzell Rivera"><br><br>
                 <a href="#mis-trabajos">VER MIS TRABAJOS</a>
             </div>
         </div>
     </header>
     <main>
-        <!--sirve para que google entienda que este es el contenido principal-->
         <section id="sobre-mi">
-            <!--Una seccion-->
             <div class="Contenedor">
                 <h3>Sobre mí</h3>
                 <div class="Contenedor-sobremi">
                     <div class="computadoras">
-                        <img src="img/computadoras.png">
-                        <!--img para img principales, no de fondos-->
+                        <img id="img-sobre" src="src/assets/img/sobre-mi.jpg">
                     </div>
                     <div class="texto">
-                        <p>Mi nombre es Hanzell Rivera y soy desarrollador de aplicaciones web.</p>
+                        <p>Hola, &#128075; mi nombre es Hanzell Rivera &#128512; y soy desarrollador de aplicaciones web.</p>
                         <p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, JavaScript, jQuery, Angular, Nodejs, MongoDB, Wordpress. Si necesitás una página web moderna, funcional, que se adapte a todos los diferentes
                             tipos de pantalla, te aseguro que llegaste al lugar correcto.</p>
-                        <p>Puedes contactar conmigo a través de mis redes sociales como <a class="link-redes" href="https://www.facebook.com/hanzellerivera/">Facebook</a> , <a class="link-redes" href="https://twitter.com/rivera_hanzell">Twitter</a>, <a class="link-redes"
-                                href="https://www.linkedin.com/in/hanzell-rivera-027539175/">Linkedin</a> e <a class="link-redes" href="https://www.instagram.com/hanzellriverap/">Instagram</a> o completando el formulario de contacto que se encuentra al final
+                        <p>Puedes contactar conmigo a través de mis redes sociales como:<address><a class="link-redes" href="https://www.facebook.com/hanzellerivera">Facebook</a></address> , <address><a class="link-redes" href="https://twitter.com/rivera_hanzell">Twitter</a></address>, <address><a class="link-redes"
+							href="https://www.linkedin.com/in/hanzell-rivera-027539175">Linkedin</a></address> e <address><a class="link-redes" href="https://www.instagram.com/hanzellriverap">Instagram</a></address> o completando el formulario de contacto que se encuentra al final
                             de mi sitio web.</p>
                         <a href="#mis-trabajos">VER MIS TRABAJOS</a>
                     </div>
@@ -140,48 +118,48 @@
                         <h4>Función de la Web</h4>
                         <p>Páginas web atractivas y funcionales con el objetivo de satisfacer todas tus expectativas. La importancia del diseño es fundamental para tener éxito y atraer a tus visitantes. También lo es la velocidad de carga del sitio web,
                             deben ser rápidos para que el visitante tenga la mejor experiencia</p>
-                        <img class="icono" src="img/monitor.png">
-                        <img class="ondas" src="img/waves.png">
+                        <img class="icono" src="src/assets/img/monitor.png">
+                        <img class="ondas" src="src/assets/img/waves.png">
 
                     </div>
                     <div class="servicios celeste">
                         <h4>Responsive Design</h4>
                         <p>Hoy en día las páginas web se ven en multitud de dispositivos como tablets, celulares, libros electrónicos, notebooks, PCs, etc. La tecnología móvil es el presente y el futuro. Para eso es importante y me aseguro de que tu sitio
                             web sea compatible con todos los tamaños de pantalla de esta época moderna</p>
-                        <img class="icono" src="img/mobile.png">
-                        <img class="ondas" src="img/waves.png">
+                        <img class="icono" src="src/assets/img/mobile.png">
+                        <img class="ondas" src="src/assets/img/waves.png">
 
                     </div>
                     <div class="servicios amarillo">
                         <h4>SEO</h4>
                         <p>Al crear sitios web, tengo muy en cuenta la optimización de motores de búsqueda (SEO). Llevo a cabo prácticas de SEO estándar en cada página del sitio web, lo que permite que tu sitio tenga una clasificación más alta en los resultados
                             de Google y asi generar mas tráfico a la web</p>
-                        <img class="icono" src="img/seo.png">
-                        <img class="ondas" src="img/waves.png">
+                        <img class="icono" src="src/assets/img/seo.png">
+                        <img class="ondas" src="src/assets/img/waves.png">
 
                     </div>
                     <div class="servicios celeste">
                         <h4>Autoadministrable</h4>
                         <p>Es importante que puedas administrar tu página web tu mismo, desde cualquier lugar y en cualquier momento. Desarrollo sistemas de gestión de contenido que te permiten ver los datos de tu página web y editar el contenido que quieras,
                             lo que te permite mantenerte actualizado</p>
-                        <img class="icono" src="img/wordpress.png">
-                        <img class="ondas" src="img/waves.png">
+                        <img class="icono" src="src/assets/img/wordpress.png">
+                        <img class="ondas" src="src/assets/img/waves.png">
 
                     </div>
                     <div class="servicios amarillo">
                         <h4>Mantenimiento</h4>
                         <p>Podés contactarme si necesitas actualizar tu página web, agregar nuevas secciones o cualquier cambio que necesites. Esto es perfecto para los sitios web de pequeñas empresas, donde no se necesita un diseñador de páginas web a tiempo
                             completo, sino solo en distintas ocasiones</p>
-                        <img class="icono" src="img/mante.png">
-                        <img class="ondas" src="img/waves.png">
+                        <img class="icono" src="src/assets/img/mante.png">
+                        <img class="ondas" src="src/assets/img/waves.png">
 
                     </div>
                     <div class="servicios celeste">
                         <h4>Marketing Digital</h4>
                         <p>Utilizo las herramientas mas importantes como Google Adwords y Google Analytics, para que tu negocio aparezca en los resultados de búsqueda de Google justo cuando alguien te necesita y analizar como los usuarios interactúan con
                             tu página web</p>
-                        <img class="icono" src="img/marketing.png">
-                        <img class="ondas" src="img/waves.png">
+                        <img class="icono" src="src/assets/img/marketing.png">
+                        <img class="ondas" src="src/assets/img/waves.png">
 
                     </div>
 
@@ -192,31 +170,31 @@
         </section>
         <section id="mis-trabajos">
             <div class="Contenedor">
-                <!--libreria owl carousel 2-->
+                <!--used library owl carousel 2-->
                 <h3>Mis Trabajos</h3>
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <a href="https://riverahan.github.io"><img src="img/proyecto.jpg" title="Página Web Hanzell Rivera"></a>
+                        <a href="https://riverahan.github.io"><img src="src/assets/img/proyecto.jpg" title="Página Web Hanzell Rivera"></a>
                         <h4 class="titulo-img">Página Web Hanzell Rivera</h4>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="img/proyecto2.jpg" title="Proyecto JS"></a>
+                        <a href="#"><img src="src/assets/img/proyecto2.jpg" title="Proyecto JS"></a>
                         <h4 class="titulo-img">Proyecto JS</h4>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="img/proyecto3.jpg" title="Proyecto ACONNI"></a>
+                        <a href="#"><img src="src/assets/img/proyecto3.jpg" title="Proyecto ACONNI"></a>
                         <h4 class="titulo-img">Proyecto ACONNI</h4>
                     </div>
                     <div class="item">
-                        <a href="https://riverahan.github.io"><img src="img/proyecto.jpg" title="Página Web Hanzell Rivera"></a>
+                        <a href="https://riverahan.github.io"><img src="src/assets/img/proyecto.jpg" title="Página Web Hanzell Rivera"></a>
                         <h4 class="titulo-img">Página Web Hanzell Rivera</h4>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="img/proyecto2.jpg" title="Proyecto JS"></a>
+                        <a href="#"><img src="src/assets/img/proyecto2.jpg" title="Proyecto JS"></a>
                         <h4 class="titulo-img">Proyecto JS</h4>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="img/proyecto3.jpg" title="Proyecto ACONNI"></a>
+                        <a href="#"><img src="src/assets/img/proyecto3.jpg" title="Proyecto ACONNI"></a>
                         <h4 class="titulo-img">Proyecto ACONNI</h4>
                     </div>
 
@@ -231,21 +209,21 @@
                 <div class="contenedor-trabajar">
                     <div class="items">
                         <ul>
-                            <li><img src="img/velocidad.png"></li>
+                            <li><img src="src/assets/img/velocidad.png"></li>
                             <li>Velocidad</li>
                             <li>Me aseguro de que tu web cargue entre 2 y 4 segundos (depende de la cantidad de contenido del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar más</li>
                         </ul>
                     </div>
                     <div class="items">
                         <ul>
-                            <li><img src="img/mantenimiento.png"></li>
+                            <li><img src="src/assets/img/mantenimiento.png"></li>
                             <li>Mantenimiento</li>
                             <li>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenido mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web</li>
                         </ul>
                     </div>
                     <div class="items">
                         <ul>
-                            <li><img src="img/mobile2.png"></li>
+                            <li><img src="src/assets/img/mobile2.png"></li>
                             <li>Mobile Priority</li>
                             <li>Cada vez mas personas navegan desde sus celulares en cualquier parte del mundo. Me aseguro de que tu web esté optimizada para cualquier tipo de dispositivo móvil</li>
                         </ul>
@@ -258,20 +236,24 @@
                 <h3>Blog</h3>
                 <div class="contenedor-publicaciones">
                     <div class="publicacion">
-                        <img src="img/blog1.jpg">
-                        <div class="contenido">
-                            <h4>¿Cómo empezar en el mundo de la programación?</h4>
-                            <p>En este post te daré unos consejos que te pueden ayudar a encaminarte al grandioso mundo de la programación...</p>
-                            <a href="https://riverahan.blogspot.com/2019/09/como-empezar-en-el-mundo-de-la.html">Leer más →</a>
-                        </div>
+                        <article>
+							<img src="src/assets/img/blog1.jpg">
+							<div class="contenido">
+								<h4>¿Cómo empezar en el mundo de la programación?</h4>
+								<p>En este post te daré unos consejos que te pueden ayudar a encaminarte al grandioso mundo de la programación...</p>
+								<address><a href="https://riverahan.blogspot.com/2019/09/como-empezar-en-el-mundo-de-la.html">Leer más →</a></address>
+							</div>
+						</article>
                     </div>
                     <div class="publicacion">
-                        <img src="img/blog2.jpg">
-                        <div class="contenido">
-                            <h4>JavaScript, el lenguaje que dominan la Word Wide Web</h4>
-                            <p>Quiero hablar un poco del lenguaje de programación más utilizados en la Web(Javascript). Lo fascinante...</p>
-                            <a href="https://riverahan.blogspot.com/2020/09/javascript-el-lenguaje-que-dominan-la.html">Leer más →</a>
-                        </div>
+                        <article>
+							<img src="src/assets/img/blog2.jpg">
+							<div class="contenido">
+								<h4>JavaScript, el lenguaje que dominan la Word Wide Web</h4>
+								<p>Quiero hablar un poco del lenguaje de programación más utilizados en la Web(Javascript). Lo fascinante...</p>
+								<address><a href="https://riverahan.blogspot.com/2020/09/javascript-el-lenguaje-que-dominan-la.html">Leer más →</a></address>
+							</div>
+						</article>
                     </div>
                 </div>
             </div>
@@ -287,7 +269,6 @@
             <div class="Contenedor">
                 <h3 class="hide">Contacto</h3>
                 <form role="form" id="formulario">
-                    <!--post para que los datos se envien en forma oculta multipart para enviar archivos adjuntos-->
                     <input id="name" type="text" placeholder="Nombre" name="name" pattern=[A-Z\sa-z]{3,20} required>
                     <input id="email" type="email" placeholder="Email" name="email" required>
                     <textarea id="message" placeholder="Mensaje" name="message" required></textarea>
@@ -298,27 +279,25 @@
                 </div>
 
                 <div class="contacto-info">
-                    <div class="mail"> <img src="img/mail-icon.png" alt="contacto-correo-hanzell">hanzellrivera95@gmail.com</div>
-                    <div class="whatssap"> <img src="img/whatsapp-icon.png" alt="contacto-numero-hanzell"> <a href="https://api.whatsapp.com/send?phone=50587146772">50587146772</a></div>
+                    <div class="mail"> <img src="src/assets/img/mail-icon.png" alt="contacto-correo-hanzell">hanzellrivera95@gmail.com</div>
+                    <div class="whatssap"> <img src="src/assets/img/whatsapp-icon.png" alt="contacto-numero-hanzell"> <a href="https://api.whatsapp.com/send?phone=50587146772">50587146772</a></div>
                 </div>
-
             </div>
-
-        </section>
-
-    </main>
-
+		</section>
+		
+	</main>
+	
     <footer>
-        <!--Pie de página-->
-
         <div class="Contenedor">
-            <div id="reds" class="redes">
-                <a href="https://www.facebook.com/hanzellerivera/"><img src="img/facebook.png" alt="imagen-facebook"></a>
-                <a href="https://www.instagram.com/hanzellriverap/"><img src="img/instagram.png" alt="imagen-instagram" title="https://www.flaticon.es/autores/pixel-perfect"></a>
-                <a href="https://twitter.com/rivera_hanzell"><img src="img/twitter.png" alt="imagen-instagram" title="https://www.flaticon.es/autores/pixel-perfect"></a>
-                <a href="https://github.com/RiveraHan"><img src="img/github.png" alt="imagen-github"></a>
-                <a href="https://www.linkedin.com/in/hanzell-rivera-027539175/"><img src="img/linkedin.png" alt="imagen-linkedin"></a>
-            </div>
+            <section id="reds">
+				<div class="redes">
+					<address><a href="https://www.facebook.com/hanzellerivera"><img src="src/assets/img/facebook.png" alt="imagen-facebook"></a></address>
+					 <address><a href="https://www.instagram.com/hanzellriverap"><img src="src/assets/img/instagram.png" alt="imagen-instagram" title="https://www.flaticon.es/autores/pixel-perfect"></a></address>
+					 <address><a href="https://twitter.com/rivera_hanzell"><img src="src/assets/img/twitter.png" alt="imagen-instagram" title="https://www.flaticon.es/autores/pixel-perfect"></a></address>
+					 <address><a href="https://github.com/RiveraHan"><img src="src/assets/img/github.png" alt="imagen-github"></a></address>
+					 <address><a href="https://www.linkedin.com/in/hanzell-rivera-027539175"><img src="src/assets/img/linkedin.png" alt="imagen-linkedin"></a></address>
+				 </div>
+			</section>
             <div class="parrafo">
                 <p id="anio"></p>
             </div>

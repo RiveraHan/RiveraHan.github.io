@@ -114,6 +114,15 @@ h3 {
     /*Peso d la fuente*/
 }
 
+address {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+#img-sobre {
+    border-radius: 10px;
+}
 #sobre-mi .Contenedor-sobremi {
     display: flex;
     justify-content: space-around;
@@ -248,7 +257,7 @@ span {
 }
 
 #blog .publicacion {
-    width: 30%;
+    width: 40%;
     box-shadow: 1px 1px 14px #ccc;
     /*puedes conseguirlo desde boxshadow generator*/
 }
