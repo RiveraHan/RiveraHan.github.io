@@ -18,15 +18,14 @@
     <link rel="stylesheet" href="src/assets/lib/owl.theme.default.min.css">
     <script type="text/javascript" src="src/assets/lib/owl.carousel.min.js"></script>
     <!--To download and install the owl carousel 2 libraries https://owlcarousel2.github.io-->
+
+    <!-- main -->
+    <script type="text/javascript" src="src/js/main.js"></script>
     <!-- Menu -->
     <script type="text/javascript" src="src/js/menu.js"></script>
     <!-- carousel -->
     <script type="text/javascript" src="src/js/carousel.js"></script>
-    <!-- Form contact -->
-    <script type="text/javascript" src="src/js/contact.js"></script>
-    <!-- middlewares -->
-    <script type="text/javascript" src="src/middlewares/anio.js"></script>
-
+    
     <style>
         #actualizar {
             text-decoration: none;
@@ -35,13 +34,7 @@
         
         .titulo-img {
             text-align: center;
-        }
-        
-        #foto-perfil {
-            border-radius: 80px;
-            filter: drop-shadow(5px 5px 15px #444);
-        }
-        
+        } 
         .item img {
             filter: drop-shadow(3px 3px 3px #444);
         }
@@ -73,7 +66,6 @@
                         <li><a href="#por-que-trabajar">¿Por qué trabajar conmigo?</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="#reds">Redes</a></li>
                     </ul>
                 </nav>
             </div>
@@ -83,7 +75,6 @@
             <div class="Contenedor-titulo">
                 <h1>Hanzell Rivera</h1>
                 <h2>Desarrollador de Aplicaciones Web</h2>
-                <img id="foto-perfil" src="src/assets/img/perfil-hanzell.jpg" alt="foto-perfil" title="Hanzell Rivera"><br><br>
                 <a href="#mis-trabajos">VER MIS TRABAJOS</a>
             </div>
         </div>
@@ -94,11 +85,11 @@
                 <h3>Sobre mí</h3>
                 <div class="Contenedor-sobremi">
                     <div class="computadoras">
-                        <img id="img-sobre" src="src/assets/img/sobre-mi.jpg">
+                        <img id="img-sobre" src="src/assets/img/perfil.jpg">
                     </div>
                     <div class="texto">
                         <p>Hola, &#128075; mi nombre es Hanzell Rivera &#128512; y soy desarrollador de aplicaciones web.</p>
-                        <p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, JavaScript, jQuery, Angular, Nodejs, MongoDB, Wordpress. Si necesitás una página web moderna, funcional, que se adapte a todos los diferentes
+                        <p>Me aseguro de utilizar siempre las últimas tecnologías de desarrollo web: HTML5, CSS3, JavaScript, jQuery, ReactJS, Angular, Nodejs, MongoDB, Wordpress. Si necesitás una página web moderna, funcional, que se adapte a todos los diferentes
                             tipos de pantalla, te aseguro que llegaste al lugar correcto.</p>
                         <p>Puedes contactar conmigo a través de mis redes sociales como:<address><a class="link-redes" href="https://www.facebook.com/hanzellerivera">Facebook</a></address> , <address><a class="link-redes" href="https://twitter.com/rivera_hanzell">Twitter</a></address>, <address><a class="link-redes"
 							href="https://www.linkedin.com/in/hanzell-rivera-027539175">Linkedin</a></address> e <address><a class="link-redes" href="https://www.instagram.com/hanzellriverap">Instagram</a></address> o completando el formulario de contacto que se encuentra al final
@@ -160,13 +151,9 @@
                             tu página web</p>
                         <img class="icono" src="src/assets/img/marketing.png">
                         <img class="ondas" src="src/assets/img/waves.png">
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
         <section id="mis-trabajos">
             <div class="Contenedor">
@@ -174,16 +161,12 @@
                 <h3>Mis Trabajos</h3>
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <a href="https://riverahan.github.io"><img src="src/assets/img/proyecto.jpg" title="Página Web Hanzell Rivera"></a>
-                        <h4 class="titulo-img">Página Web Hanzell Rivera</h4>
+                        <a href="https://nifty-bohr-58658f.netlify.app"><img src="src/assets/img/react-app-crypto.png" title="App con Reactjs"></a>
+                        <h4 class="titulo-img">Cotizador de Cryptomonedas</h4>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="src/assets/img/proyecto2.jpg" title="Proyecto JS"></a>
-                        <h4 class="titulo-img">Proyecto JS</h4>
-                    </div>
-                    <div class="item">
-                        <a href="#"><img src="src/assets/img/proyecto3.jpg" title="Proyecto ACONNI"></a>
-                        <h4 class="titulo-img">Proyecto ACONNI</h4>
+                        <a href="https://inspiring-varahamihira-10b7d8.netlify.app"><img src="src/assets/img/react-app-clima.png" title="App con REactjs"></a>
+                        <h4 class="titulo-img">App Consulta Clima</h4>
                     </div>
                     <div class="item">
                         <a href="https://riverahan.github.io"><img src="src/assets/img/proyecto.jpg" title="Página Web Hanzell Rivera"></a>
@@ -197,7 +180,6 @@
                         <a href="#"><img src="src/assets/img/proyecto3.jpg" title="Proyecto ACONNI"></a>
                         <h4 class="titulo-img">Proyecto ACONNI</h4>
                     </div>
-
                 </div>
 
             </div>
@@ -258,35 +240,15 @@
                 </div>
             </div>
         </section>
-        <section id="que-esperas">
-            <div class="Contenedor">
-                <h3>¿Qué esperas para tener tu página web?</h3>
-                <a href="#contacto">CHARLEMOS</a>
-            </div>
-        </section>
         <section id="contacto">
-
-            <div class="Contenedor">
-                <h3 class="hide">Contacto</h3>
-                <form role="form" id="formulario">
-                    <input id="name" type="text" placeholder="Nombre" name="name" pattern=[A-Z\sa-z]{3,20} required>
-                    <input id="email" type="email" placeholder="Email" name="email" required>
-                    <textarea id="message" placeholder="Mensaje" name="message" required></textarea>
-                    <input type="submit" value="ENVIAR">
-                </form>
-
-                <div id="form">
-                </div>
 
                 <div class="contacto-info">
                     <div class="mail"> <img src="src/assets/img/mail-icon.png" alt="contacto-correo-hanzell">hanzellrivera95@gmail.com</div>
                     <div class="whatssap"> <img src="src/assets/img/whatsapp-icon.png" alt="contacto-numero-hanzell"> <a href="https://api.whatsapp.com/send?phone=50587146772">50587146772</a></div>
                 </div>
             </div>
-		</section>
-		
+		</section>	
 	</main>
-	
     <footer>
         <div class="Contenedor">
             <section id="reds">
@@ -302,7 +264,6 @@
                 <p id="anio"></p>
             </div>
         </div>
-
     </footer>
 </body>
 

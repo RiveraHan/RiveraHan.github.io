@@ -35,7 +35,7 @@ a {
 }
 
 header {
-    background: linear-gradient(rgba(84, 93, 220, .6), rgba(96, 171, 245, .8)), url(../img/fondo.jpg);
+    background: linear-gradient(rgba(42, 156, 248, 0.6), rgba(96, 171, 245, .8)), url(../img/fondo.jpg);
     /*../ para regresar a lacarpeta raiz o anterior. En color html para buscar el código del degradado; el .7 es la transparencia de fondo*/
     height: 100vh;
     /*100% del alto de la ventana. También sirve para dispositivos moviles*/
@@ -75,9 +75,7 @@ h2 {
 
 .Contenedor-titulo a,
 #sobre-mi a,
-#blog a,
-#que-esperas a,
-#contacto input[type="submit"] {
+#blog a {
     /*Todas las propiedades o secciones las aplique en ambos, que tome las propiedadesen el otro botton*/
     font-size: 14px;
     color: #fff;
@@ -122,6 +120,7 @@ address {
 
 #img-sobre {
     border-radius: 10px;
+    margin-left: 45%;
 }
 #sobre-mi .Contenedor-sobremi {
     display: flex;
@@ -314,28 +313,6 @@ span {
     margin: auto;
 }
 
-input[type="text"],
-input[type="email"] {
-    /*forma de llamar a los input*/
-    width: 49%;
-    margin-bottom: 15px;
-    padding: 18px 0;
-    border: 0;
-    border-bottom: 1px solid #5cb8ff;
-    /*El 1px es el grosor del border de abajo*/
-    font-size: 17px;
-}
-
-textarea {
-    width: 100%;
-    border: 0;
-    padding: 18px 0;
-    border-bottom: 1px solid #5cb8ff;
-    /*El 1px es el grosor del border de abajo*/
-    font-size: 17px;
-    margin-bottom: 40px;
-}
-
 #contacto input[type="submit"] {
     width: 170px;
     margin: auto;
@@ -400,7 +377,7 @@ html {
 #por-que-trabajar,
 #blog,
 #contacto {
-    padding: 80px 0;
+    padding: 30px 0;
 }
 
 #servicios {
@@ -445,6 +422,9 @@ html {
     }
     h2 {
         font-size: 19px;
+    }
+    #img-sobre {
+        margin-left: 0%;
     }
     #sobre-mi .Contenedor-sobremi {
         flex-direction: column;
@@ -526,6 +506,9 @@ html {
     /*600px no aplica en celulares, solo para tablet*/
     header {
         height: 100vh;
+    }
+    #img-sobre {
+        margin-left: 0%;
     }
     .servicios {
         width: 57%;
