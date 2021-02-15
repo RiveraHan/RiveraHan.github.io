@@ -35,13 +35,13 @@ a {
 }
 
 header {
-    background: linear-gradient(rgba(42, 156, 248, 0.6), rgba(96, 171, 245, .8)), url(../img/fondo.jpg);
+    background: linear-gradient(rgba(106, 184, 248, 0.561), rgba(96, 171, 245, .8)), url(../img/fondo.jpg);
     /*../ para regresar a lacarpeta raiz o anterior. En color html para buscar el código del degradado; el .7 es la transparencia de fondo*/
     height: 100vh;
     /*100% del alto de la ventana. También sirve para dispositivos moviles*/
     background-size: cover;
     /*Adacta la imagen al ancho de la página*/
-    background-position: right;
+    background-position:center;
 }
 
 #Contenedor-titulo-flex {
@@ -138,7 +138,7 @@ address {
     justify-content: space-around;
     /*Separa los contenidos,  cajas o div*/
     flex-wrap: wrap;
-    color: #fff;
+    color: #2f2f2f;
 }
 
 .servicios {
@@ -167,15 +167,15 @@ address {
 
 .Contenedor-servicios .amarillo {
     /*llamada a los contenedores violestas que esten en .contedor-servicios*/
-    background: linear-gradient(to top, #cfc312, #d6da17);
+    background: linear-gradient(to top, #d6cc3d, #e3e659);
     /*to top, para que el gradado valla de abajo hacia arriba herramientas: www.colorzila.com*/
-    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
     /*box-shadow,la sombra del div. herramiento: www.cssmatic.com*/
 }
 
 .Contenedor-servicios .celeste {
-    background: linear-gradient(to top, #40a8f9, #5cb8ff);
-    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+    background: linear-gradient(to top, #3996dd, #50a2e0);
+    box-shadow: 0 12px 30px 0 rgba(222, 220, 86, .3);
 }
 
 .ondas {
@@ -450,7 +450,7 @@ html {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        color: #fff;
+        color: #2f2f2f;
         flex-direction: column;
     }
     .servicios {
